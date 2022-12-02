@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Formulario Seguridad</title>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+<body>
+    <center>
+        <br>
+        <div class="card border-secondary mb-3" style="max-width: 60rem;">
+            <div class="card-header">Form</div>
+            <div class="card-body">
+              <h4 class="card-title">Form Verification</h4>
+              <p class="card-text">Answer each question. Please answer correctly</p>
+                <form class="formulario" id="formulario">
+                    <fieldset>
+                        <div class="form-group">
+                            <label class="form-label mt-4">Enter your data to verification</label>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Enter your name">
+                                <label for="nombre">Full name</label>
+                                <div id='message1'></div>
+                            </div>
+
+                            <div class="form-floating mt-4">
+                                <input type="text" class="form-control" id="correo" placeholder="Email">
+                                <label for="correo">Email</label>
+                                <div id='message2'></div>
+                            </div>
+
+                            <div class="form-floating mt-4">
+                                <input maxlength="10" type="text" class="form-control" id="numero" placeholder="Phone number">
+                                <label for="numero">Phone number</label>
+                                <div id='message3'></div>
+                            </div>
+
+                            <div class="form-floating mt-4">
+                                <input maxlength="10" type="password" class="form-control" id="contra1" placeholder="Password">
+                                <label for="contra1">Password</label>
+                                <div id='message4'></div>
+                            </div>
+
+                            <div class="form-floating mt-4">
+                                <input maxlength="10" type="password" class="form-control" id="contra2" placeholder="Confirm Password">
+                                <label for="contra2">Confirm Password</label>
+                                <div id='message5'></div>
+                            </div>
+                        </div>
+
+                        <legend class="mt-4">Sex</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                            <label class="form-check-label" for="optionsRadios1">
+                                Woman
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            <label class="form-check-label" for="optionsRadios2">
+                                Men
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="aviso">
+                            <div class="card bg-light mb-3" style="max-width: 20rem;">
+                                <div class="card-header">Privacy Policies</div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Policies</h4>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos nostrum accusamus repellat quos similique atque sapiente eveniet ab beatae! Suscipit vel mollitia deserunt facilis sapiente quod quidem? Error, eveniet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="check">
+                            <legend class="mt-4">Privacy Policies</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="politicas">
+                                <label class="form-check-label" for="politicas">
+                                    I agree with the policies
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="button">
+                    <button type="button" class="btn btn-outline-success" onclick = 'return validar();' value='Enviar'>Success</button>
+                </div>
+            </div>
+        </div>
+    </center>
+    
+    <script src='./js/validaciones.js'></script>
+
+</body>
+</html>

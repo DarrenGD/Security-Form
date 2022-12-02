@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+.formulario{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+}
+.button{
+	margin: auto;
+	margin-top: 20px;
+}
+.aviso{
+	margin-top: 40px;
+}
+.check{
+	float: right;
+	margin-right: 120px;
+}
